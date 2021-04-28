@@ -14,7 +14,7 @@ server.on('request', serve);
 
 async function serve(request, response){
 
-    //ホストよりあとののURIを代入
+    //サブディレクトリ以降を代入
     let filePath = request.url;
 
     //もしもファイル指定がなければデフォルトに指定されたファイルを返すようにする。
